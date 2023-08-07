@@ -15,3 +15,63 @@
         font-family: "Roboto", sans-serif;
     }
 }
+
+/* Providers */
+
+.google-provider {
+    @apply text-red-400 hover:text-white border-2 border-red-400 hover:bg-red-400;
+}
+
+.google-provider:hover .google-path-1,
+.google-provider:hover .google-path-2,
+.google-provider:hover .google-path-3,
+.google-provider:hover .google-path-4 {
+    fill: white;
+}
+
+.google-path-1 {
+    fill: #ff3e3e;
+}
+
+.google-path-2 {
+    fill: #3b8aff;
+}
+.google-path-3 {
+    fill: #ffce12;
+}
+.google-path-4 {
+    fill: #27b648;
+}
+
+.facebook-provider {
+    @apply text-[#1877f2] hover:text-white border-2 border-[#1877f2] hover:bg-[#1877f2];
+}
+
+.facebook-svg {
+    @apply fill-[#1877f2] group-hover:fill-white;
+}
+
+/* Form */
+
+.seperate::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #e0e0e0;
+}
+
+.input-form {
+    @apply w-[280px] h-[52px] pl-[12px] pr-[38px] py-6 bg-[#f5f5f5] rounded-[10px]
+    hover:border-2 hover:border-second focus:outline-2 focus:outline-second 
+    caret-second border-2 border-transparent;
+}
+
+/* Button */
+
+.button-common {
+    @apply w-[280px] bg-second px-4 rounded-[10px] h-[36px] text-white
+    font-medium mt-8 mb-4 hover:bg-green-500;
+}

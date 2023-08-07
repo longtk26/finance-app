@@ -15,7 +15,7 @@ const Form = ({ type, title }: FormProps) => {
                 {title}
             </h3>
             <div className="flex">
-                <Oauth />
+                {!formForgot && <Oauth />}
                 {formLogin && <Login />}
                 {formRegister && <Register />}
                 {formForgot && <ForgotPass />}
