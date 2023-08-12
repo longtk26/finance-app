@@ -10,7 +10,7 @@ const Register = () => {
 
     return (
         <section>
-            <span className="text-[16px] text-[#707070] mb-6 block">
+            <span className="text-[16px] hidden text-[#707070] mb-6 md:block">
                 Using Money Lover account
             </span>
             <form className="relative seperate mb-6">
@@ -30,7 +30,7 @@ const Register = () => {
                         autoComplete="currentPassword"
                     />
                     <div
-                        className="absolute right-2 top-[50%] translate-y-[-50%]"
+                        className="absolute right-12 md:right-2  top-[50%] translate-y-[-50%]"
                         onClick={() => setDisplayPass((pre) => !pre)}
                     >
                         {displayPass ? (

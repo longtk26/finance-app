@@ -18,7 +18,7 @@ const ForgotPass = () => {
                 />
                 <Button type="confirm" content="confirm" />
             </form>
-            <div>
+            <div className="mt-4">
                 <Link href="/auth/login" className="text-second">
                     Back to Login{" "}
                 </Link>

@@ -73,5 +73,5 @@
 
 .button-common {
     @apply w-[280px] bg-second px-4 rounded-[10px] h-[36px] text-white
-    font-medium mt-8 mb-4 hover:bg-green-500;
+    font-medium mt-4 hover:bg-green-500;
 }

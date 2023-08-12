@@ -8,13 +8,13 @@ const Form = ({ type, title }: FormProps) => {
 
     return (
         <section
-            className="m-auto bg-white max-w-[670px] min-w-[400px] 
-        px-10 pb-10 pt-[34px] rounded-[20px]"
+            className="m-auto bg-white max-w-[670px] min-w-[350px] 
+        px-10 pb-10 pt-[34px] md:rounded-[20px]"
         >
             <h3 className="capitalize text-center text-[32px] font-bold mb-[34px]">
                 {title}
             </h3>
-            <div className="flex">
+            <div className="flex flex-col md:flex-row items-center md:items-start">
                 {!formForgot && <Oauth />}
                 {formLogin && <Login />}
                 {formRegister && <Register />}
