@@ -14,7 +14,7 @@ const buttonTypes: { [key: string]: any } = {
         type: "submit",
     },
     addTransaction: {
-        style: "button-common",
+        style: "button-common button-add-transaction",
         type: "button",
     },
     signOut: {

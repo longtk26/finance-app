@@ -14,6 +14,10 @@
     html {
         font-family: "Roboto", sans-serif;
     }
+
+    .flex-col-center {
+        @apply flex flex-col items-center;
+    }
 }
 
 /* Providers */
@@ -74,4 +78,22 @@
 .button-common {
     @apply w-[280px] bg-second px-4 rounded-[10px] h-[36px] text-white
     font-medium mt-4 hover:bg-green-500;
+}
+
+.button-add-transaction {
+    @apply w-[150px] text-[14px] h-[32px] px-1 rounded-[4px] bg-[#1aa333] 
+    transition-colors duration-300 mt-0 ml-[12px];
+}
+
+/* Header */
+
+.header-total::after {
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: 45%;
+    display: block;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 3px solid rgba(40, 39, 39, 0.87);
 }

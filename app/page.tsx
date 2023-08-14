@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { fetchUser } from "@/utils";
+import { Header, MoneyTracking, Transaction } from "@/components";
 
 export default function Home() {
     const [user, setUser] = useState(null);
@@ -24,13 +25,19 @@ export default function Home() {
     };
 
     useEffect(() => {
-        getUser();
+        // getUser();
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    if (!user) {
+    if (user) {
         return <h1>You need login</h1>;
     } else {
-        return <h1>Welcome {user["displayName"]}</h1>;
+        return (
+            <>
+                <Header page="home" />
+                <MoneyTracking />
+                <Transaction />
+            </>
+        );
     }
 }

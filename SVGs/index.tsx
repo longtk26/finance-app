@@ -83,3 +83,96 @@ export const PasswordSVGOpen = (props: any) => (
         </g>
     </svg>
 );
+
+export const MenuIcon = (props: any) => (
+    <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="test" {...props}>
+        <g fill="rgba(0,0,0,0.54)" fillRule="evenodd">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M3 6h18v2H3V6Zm0 5h18v2H3v-2Zm0 5h18v2H3v-2Z" />
+        </g>
+    </svg>
+);
+
+export const TransactionIcon = (props: any) => (
+    <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="test" {...props}>
+        <g fill={props.fill} fillRule="evenodd">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M21 18v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v1h-9a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9Zm-9-2h10V8H12v8Zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5Z" />
+        </g>
+    </svg>
+);
+
+export const ReportIcon = (props: any) => (
+    <svg xmlns="http://www.w3.org/2000/svg" {...props}>
+        <title>{"icon/24/collections"}</title>
+        <g fill="none" fillRule="evenodd">
+            <path d="M0 0h24v24H0z" />
+            <path
+                fill={props.fill}
+                fillRule="nonzero"
+                d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6Z"
+            />
+            <path d="M0 0h24v24H0z" />
+            <path
+                fill={props.fill}
+                fillRule="nonzero"
+                d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2Zm0 10-2.5-1.5L15 12V4h5v8Z"
+            />
+        </g>
+    </svg>
+);
+
+export const BudgetIcon = (props: any) => (
+    <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="test" {...props}>
+        <g fill={props.fill} fillRule="evenodd">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M2 10.006C2 8.898 2.9 8 3.992 8h7.016c1.1 0 1.992.897 1.992 2.006v9.988C13 21.102 12.1 22 11.008 22H3.992C2.892 22 2 21.103 2 19.994v-9.988ZM12.548 6.05c.143-.034.292-.051.444-.051h7.016C21.108 6 22 6.897 22 8.006v9.988C22 19.102 21.1 20 20.008 20H15V9a2.995 2.995 0 0 0-2.452-2.95ZM13 2h7v2h-7V2ZM4 4h7v2H4V4Z" />
+        </g>
+    </svg>
+);
+
+export const CalendarIcon = (props: any) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={24}
+        height={24}
+        aria-labelledby="ic_calendar_empty"
+        {...props}
+    >
+        <g fillRule="evenodd">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M16 1v2H8V1H6v2H5a1.99 1.99 0 0 0-1.99 2L3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1h-2ZM5 19V8h14v11H5Z" />
+        </g>
+    </svg>
+);
+
+export const ViewIcon = (props: any) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={24}
+        height={24}
+        aria-labelledby="ic_view_by_time"
+        {...props}
+    >
+        <g fillRule="evenodd">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M21.983 10H18.5v1H17v-1h-.417A5.003 5.003 0 0 0 12 7c-2.76 0-5 2.24-5 5a5.003 5.003 0 0 0 4.5 4.975v2.515C6.717 19.29 2.672 16.243 1 12c1.73-4.39 6-7.5 11-7.5 4.205 0 7.887 2.195 9.983 5.5Zm.517.9.051.1H22.5v-.1Zm-8.265-.9H13v1h-1.5v3.958A3.004 3.004 0 0 1 9 12c0-1.655 1.345-3 3-3 .887 0 1.685.386 2.235 1Z" />
+            <path d="M19.5 12H16v-1h-2v1h-.5c-.645 0-1 .337-1 1v9c0 .663.355 1 1 1H22c.645 0 1-.337 1-1v-9c0-.663-.355-1-1-1h-.5v-1h-2v1Zm-6 10v-7H22v7h-8.5Zm7.5-4h-3v3h3v-3Z" />
+        </g>
+    </svg>
+);
+
+export const SearchIcon = (props: any) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={24}
+        height={24}
+        aria-labelledby="ic_search"
+        {...props}
+    >
+        <g fillRule="evenodd">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="m16.847 15.15-.283.283-1.058-1.059A7.563 7.563 0 0 0 17.2 9.6c0-4.19-3.41-7.6-7.6-7.6C5.41 2 2 5.41 2 9.6c0 4.19 3.41 7.6 7.6 7.6a7.563 7.563 0 0 0 4.774-1.694l1.059 1.058-.283.283 4.801 4.802 1.697-1.697-4.8-4.802Zm-7.246-.35a5.206 5.206 0 0 1-5.2-5.2c0-2.867 2.333-5.2 5.2-5.2s5.2 2.333 5.2 5.2-2.334 5.2-5.2 5.2Z" />
+        </g>
+    </svg>
+);
