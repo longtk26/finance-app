@@ -37,6 +37,8 @@ export default function Home() {
                 <Header page="home" />
                 <MoneyTracking />
                 <Transaction />
+                <Transaction />
+                <Transaction />
             </>
         );
     }

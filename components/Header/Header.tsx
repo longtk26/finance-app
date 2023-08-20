@@ -5,7 +5,7 @@ import { Button } from "..";
 
 const Header = ({ page }: HeaderProps) => {
     return (
-        <header className="fixed top-0 left-0 right-0 h-[64px] bg-white -z-10 shadow-head">
+        <header className="fixed top-0 left-0 right-0 h-[64px] bg-white -z-[2] shadow-head">
             <div className="absolute w-full h-full z-10 flex items-center justify-between px-[20px]">
                 <div className="ml-[90px] flex items-center cursor-pointer">
                     <Image

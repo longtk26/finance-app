@@ -13,6 +13,7 @@ module.exports = {
                 second: "#00bc2a",
                 hover: "rgba(0,0,0,.04)",
                 nav: "rgba(0,0,0,.54)",
+                third: "#2db84c14",
             },
             boxShadow: {
                 nav: "0 3px 7px 0 rgba(0,0,0,.27)",
