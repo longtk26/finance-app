@@ -17,6 +17,10 @@ const buttonTypes: { [key: string]: any } = {
         style: "button-common button-add-transaction",
         type: "button",
     },
+    addTransactionMobile: {
+        style: "button-common button-add-mobile",
+        type: "button",
+    },
     signOut: {
         style: "button-common",
         type: "button",

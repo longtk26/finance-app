@@ -8,3 +8,5 @@ export { default as Header } from "./Header/Header";
 export { default as Form } from "./Form/Form";
 export { default as Button } from "./Button/Button";
 export { default as MoneyTracking } from "./MoneyTracking/MoneyTracking";
+export { default as PopUp } from "./PopUp/PopUp";
+export { default as Account } from "./PopUp/Account/Account";

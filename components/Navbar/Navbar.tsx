@@ -3,15 +3,21 @@
 import { useState } from "react";
 import { BudgetIcon, MenuIcon, ReportIcon, TransactionIcon } from "@/SVGs";
 import Link from "next/link";
+import { Account, PopUp } from "..";
+import usePopUp from "@/hooks/usePopUp";
 
 const Navbar = () => {
     const [active, setActive] = useState(0);
+    const { isOpen, open: openPopUp, close: closePopUp } = usePopUp();
 
     return (
-        <nav className="bg-white w-[80px] fixed left-0 top-0 bottom-0 shadow-nav">
-            <div className="w-full flex flex-col items-center py-5 hover:bg-hover cursor-pointer">
+        <nav className="bg-white hidden lg:block w-[80px] fixed left-0 top-0 bottom-0 shadow-nav">
+            <button
+                onClick={openPopUp}
+                className="w-full flex flex-col items-center py-5 hover:bg-hover cursor-pointer"
+            >
                 <MenuIcon width={24} height={24} />
-            </div>
+            </button>
 
             <ul className="w-full">
                 {navItems.map((item) => (
@@ -48,6 +54,10 @@ const Navbar = () => {
                     </li>
                 ))}
             </ul>
+
+            <PopUp isOpen={isOpen} close={closePopUp}>
+                <Account />
+            </PopUp>
         </nav>
     );
 };

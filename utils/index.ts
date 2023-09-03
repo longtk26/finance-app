@@ -1,4 +1,5 @@
 import { BASE_URL } from "@/constants";
+import { getCookie } from "./serverActions";
 
 // Authentication
 export const loginGoogle = () => {
@@ -10,15 +11,17 @@ export const loginGoogle = () => {
 };
 
 // Fetch data
-export const fetchUserOauth = async () => {
+export const fetchUser = async () => {
     try {
+        const token = await getCookie("token");
         const res = await fetch(`${BASE_URL}/auth/login/success`, {
             credentials: "include",
+            headers: {
+                Authorization: `Bearer ${token}`,
+            },
         });
 
         const data = await res.json();
-
-        console.log(data);
 
         return data;
     } catch (error) {
@@ -37,6 +40,7 @@ export const registerAccount = async (info: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify(info),
+            cache: "no-cache",
         });
 
         const data = await res.json();
@@ -58,6 +62,7 @@ export const signInAccount = async (info: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify(info),
+            cache: "no-cache",
         });
 
         const data = await res.json();

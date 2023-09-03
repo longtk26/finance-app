@@ -93,9 +93,20 @@ export const MenuIcon = (props: any) => (
     </svg>
 );
 
-export const TransactionIcon = (props: any) => (
-    <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="test" {...props}>
-        <g fill={props.fill} fillRule="evenodd">
+export const TransactionIcon = ({
+    width = 24,
+    height = 24,
+    fill = "#747474",
+    ...props
+}: any) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        aria-labelledby="test"
+        width={width}
+        height={height}
+        {...props}
+    >
+        <g fill={fill} fillRule="evenodd">
             <path fill="none" d="M0 0h24v24H0z" />
             <path d="M21 18v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v1h-9a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9Zm-9-2h10V8H12v8Zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5Z" />
         </g>
@@ -122,8 +133,14 @@ export const ReportIcon = (props: any) => (
     </svg>
 );
 
-export const BudgetIcon = (props: any) => (
-    <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="test" {...props}>
+export const BudgetIcon = ({ width = 24, height = 24, ...props }: any) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        aria-labelledby="test"
+        width={width}
+        height={height}
+        {...props}
+    >
         <g fill={props.fill} fillRule="evenodd">
             <path fill="none" d="M0 0h24v24H0z" />
             <path d="M2 10.006C2 8.898 2.9 8 3.992 8h7.016c1.1 0 1.992.897 1.992 2.006v9.988C13 21.102 12.1 22 11.008 22H3.992C2.892 22 2 21.103 2 19.994v-9.988ZM12.548 6.05c.143-.034.292-.051.444-.051h7.016C21.108 6 22 6.897 22 8.006v9.988C22 19.102 21.1 20 20.008 20H15V9a2.995 2.995 0 0 0-2.452-2.95ZM13 2h7v2h-7V2ZM4 4h7v2H4V4Z" />
@@ -174,5 +191,41 @@ export const SearchIcon = (props: any) => (
             <path fill="none" d="M0 0h24v24H0z" />
             <path d="m16.847 15.15-.283.283-1.058-1.059A7.563 7.563 0 0 0 17.2 9.6c0-4.19-3.41-7.6-7.6-7.6C5.41 2 2 5.41 2 9.6c0 4.19 3.41 7.6 7.6 7.6a7.563 7.563 0 0 0 4.774-1.694l1.059 1.058-.283.283 4.801 4.802 1.697-1.697-4.8-4.802Zm-7.246-.35a5.206 5.206 0 0 1-5.2-5.2c0-2.867 2.333-5.2 5.2-5.2s5.2 2.333 5.2 5.2-2.334 5.2-5.2 5.2Z" />
         </g>
+    </svg>
+);
+
+export const AccountIcon = (props: any) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={24}
+        height={24}
+        aria-labelledby="ic_account"
+        {...props}
+    >
+        <g fill="#747474" fillRule="evenodd">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M12 13.429A5.714 5.714 0 1 1 12 2a5.714 5.714 0 0 1 0 11.429Zm9.34 4.253c.337.347.66.828.66 1.33V22H2v-2.989c0-.501.095-.98.435-1.329 1.47-1.504 5.063-2.825 9.37-2.825 4.308 0 8.06 1.322 9.534 2.825Z" />
+        </g>
+    </svg>
+);
+
+export const CategoryIcon = (props: any) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={24}
+        height={24}
+        aria-labelledby="ic_category_manager"
+        {...props}
+    >
+        <g fill="#747474" fillRule="evenodd">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M11.5 12.25 6.75 10V5.25L11.5 7.5v4.75Zm1 0V7.5l4.75-2.25V10l-4.75 2.25ZM6.75 4 12 1.5 17.25 4 12 6.5 6.75 4ZM17.25 21.75 12.5 19.5v-4.75L17.25 17v4.75Zm1 0V17L23 14.75v4.75l-4.75 2.25ZM12.5 13.5l5.25-2.5L23 13.5 17.75 16l-5.25-2.5ZM5.75 21.75 1 19.5v-4.75L5.75 17v4.75Zm1 0V17l4.75-2.25v4.75l-4.75 2.25ZM1 13.5 6.25 11l5.25 2.5L6.25 16 1 13.5Z" />
+        </g>
+    </svg>
+);
+
+export const ArrowLeftIcon = (props: any) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
+        <path d="M15.54 11.29 9.88 5.64a1 1 0 0 0-1.42 0 1 1 0 0 0 0 1.41l4.95 5L8.46 17a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.3 1 1 0 0 0 .71-.3l5.66-5.65a1 1 0 0 0 0-1.47Z" />
     </svg>
 );

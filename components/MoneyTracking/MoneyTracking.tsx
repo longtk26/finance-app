@@ -1,39 +1,23 @@
 "use client";
 
-import { MouseEvent, useState } from "react";
+import useAnimate from "@/hooks/useAnimate";
 
 const MoneyTracking = () => {
-    const [active, setActive] = useState("this month");
-    const [animate, setAnimate] = useState({
-        position: "337",
-        width: "132",
-    });
-
-    const handleClick = (e: MouseEvent, time: string) => {
-        const target = e.target as HTMLElement;
-        const width = target.clientWidth.toString();
-        const position = target.offsetLeft.toString();
-
-        setAnimate({
-            position,
-            width,
-        });
-
-        setActive(time);
-    };
+    const { animate, active, handleClick } = useAnimate();
 
     return (
         <>
-            <nav className="w-full rounded-tl rounded-tr  bg-white h-[80px] border-b border-b-[#e4e4e4] sticky top-[44px] -z-20">
+            <nav className="w-full md:px-20 rounded-tl rounded-tr bg-white h-[80px] border-b border-b-[#e4e4e4] sticky top-[44px] -z-20">
                 <ul className="w-full h-full flex items-end relative">
                     {listDays.map((item) => (
                         <li
                             key={item.time}
-                            className="py-4 px-6 text-[14px] text-nav uppercase cursor-pointer font-medium"
+                            className="py-4 px-6 text-[12px]  md:text-[14px] text-nav uppercase cursor-pointer font-medium"
                             style={{
                                 color: active === item.time ? "#00bc2a" : "",
                             }}
                             onClick={(e) => handleClick(e, item.time)}
+                            id={item.time}
                         >
                             {item.time}
                         </li>
@@ -76,9 +60,9 @@ const MoneyTracking = () => {
 };
 
 const listDays = [
-    {
-        time: "01/06/2023-30/06/2023",
-    },
+    // {
+    //     time: "01/06/2023-30/06/2023",
+    // },
     {
         time: "last month",
     },

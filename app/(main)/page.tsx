@@ -2,8 +2,8 @@ import { redirect } from "next/navigation";
 import { checkUserLogin } from "@/utils/serverActions";
 import { Header, MoneyTracking, Transaction } from "@/components";
 
-export default function Home() {
-    let isLogin = checkUserLogin();
+export default async function Home() {
+    const isLogin = await checkUserLogin();
 
     if (!isLogin) {
         redirect("/auth/login");

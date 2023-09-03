@@ -85,6 +85,11 @@
     transition-colors duration-300 mt-0 ml-[12px];
 }
 
+.button-add-mobile {
+    @apply w-[32px] text-[14px] h-[32px] px-1 rounded-[50%] bg-[#1aa333] 
+    transition-colors duration-300 mt-0 ml-[12px];
+}
+
 /* Header */
 
 .header-total::after {

@@ -39,13 +39,13 @@ export const onSignInAccount = async (formData: FormData) => {
 };
 
 // Cookies
-export const checkUserLogin = () => {
-    const token = getCookie("token");
-    const oauth = getCookie("connect.sid");
+export const checkUserLogin = async () => {
+    const token = await getCookie("token");
+    const oauth = await getCookie("connect.sid");
 
     return !!token || !!oauth;
 };
 
-export const getCookie = (name: string) => {
+export const getCookie = async (name: string) => {
     return cookies().get(name)?.value ?? "";
 };
